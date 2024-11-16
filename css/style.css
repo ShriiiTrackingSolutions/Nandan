@@ -168,6 +168,11 @@ header .container-fluid {
   max-width: 1700px;
   padding: 0 40px;
 }
+.Banner .container-fluid {
+  width: 100%;
+  max-width: 100%;
+  padding: 60px 80px;
+}
 
 .miniheader {
   padding-top: 15px;
@@ -200,6 +205,53 @@ a.phoneNu span i {
 .miniheader a:hover {
   color: var(--secondary);
 }
+
+/* header{
+  overflow-x: hidden !important;
+} */
+.effect{
+  position: relative;
+  overflow: hidden !important;
+}
+.book-now:after,
+.effect::after {
+    content: '';
+    top: 0;
+    transform: translateX(100%);
+    width: 100%;
+    height: 80px !important;
+    position: absolute;
+    z-index: 1;
+    animation: slide 3s infinite;
+    /* 
+  CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/ 
+  */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+    /* FF3.6+ */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8', GradientType=1);
+    /* IE6-9 */
+}
+
+
+/* animation */
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
 
 .miniheader .container-fluid > .row {
   justify-content: space-between;
@@ -270,6 +322,7 @@ a.phoneNu span i {
   font-family: "Font Awesome 6 Free";
   border: none;
 }
+
 .navbar {
   max-width: 100%;
 }
@@ -331,6 +384,62 @@ a.phoneNu span i {
 /* header css end */
 
 /* banner css start */
+.Banner{
+background: url('../image/girl.png'), linear-gradient(var(--BgCream),var(--BgCream));
+background-position:  right calc(100% + 70px), center;
+background-repeat: no-repeat no-repeat;
+background-size: auto 600px, cover;
+position: relative;
+}
+.Banner .display-3{
+    text-align: left;
+    font-weight: 600;
+    font-size: 44px;
+    color: var(--primary);
+    text-transform: capitalize;
+    line-height: 1.20em;
+    margin-bottom: 20px;
+}
+.Banner .btnCommon{
+  margin-top: 20px;
+}
+.Banner .counter {
+  font-size: 42px;
+  color: #151d45;
+  margin-bottom: 15px;
+}
+.Banner .counter-text {
+  color: #151d45;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.counter-Pare{
+  max-width: 750px;
+}
+
+.idxStdt.std1 {
+  right: 28%;
+  top: 30%;
+}
+.idxStdt.std2 {
+  right: 5%;
+  top: 1.5%;
+}
+.idxStdt.std3 {
+  right: 5%;
+  top: 72%;
+}
+.idxStdt {
+  position: absolute;
+  background-color: #fff;
+  padding: 0.8rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px #d5d5d5;
+}
+
 
 /* banner css end */
 
@@ -357,3 +466,78 @@ a.phoneNu span i {
   border: 1px solid #d90f2f;
   color: #d90f2f !important;
 }
+
+.btnCommon {
+  display: inline-block;
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  padding: 11px 18px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff ;
+  -webkit-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.btnCommon:hover{
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary) !important;
+}
+.btnRed i, .btnCommon i{
+  margin-left: 12px;
+}
+
+/* services card section start */
+
+.inner-container  .inner-box{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 24px;
+}
+
+.package-info-block .inner-box .icon {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  text-align: center;
+  color: #151d45;
+  font-size: 22px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 4px #000000;
+}
+.package-info-block{
+  position: relative;
+}
+.package-info-block::after{
+  content: "";
+  top: 50%;
+  right: 9%;
+  position: absolute;
+  display: inline-block;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 45px;
+  background-color: #DEDEDE;
+}
+.package-info-block:last-child::after{
+  display: none;
+}
+.inner-container {
+  margin-top: 15px;
+  padding: 30px 50px;
+  row-gap: 30px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  background-color: #f3f7fa;
+}
+/* services card section end */
