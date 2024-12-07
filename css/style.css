@@ -541,3 +541,99 @@ position: relative;
   background-color: #f3f7fa;
 }
 /* services card section end */
+
+.BrandFooter{
+  display: table;
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 62px;
+}
+.footer-address{
+  font-weight: 600;
+}
+
+.Footer{
+  color: var(--primary);
+  text-align: center;
+}
+
+.Footer a.phoneNu {
+  color: var(--primary);
+  transition: all 300ms ease;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.7em;
+}
+
+.Footer a.phoneNu span {
+  display: inline-block;
+  height: 18px;
+  vertical-align: middle;
+  width: 18px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: 10px;
+}
+.Footer a.phoneNu:hover {
+  color: var(--secondary);
+}
+.Footer a.phoneNu:hover span {
+  background-color: var(--secondary);
+}
+.Footer a.phoneNu span i {
+  transform: translateY(-4px);
+}
+.footer-column{
+  color: var(--primary);
+}
+.footer-column a{
+  color: var(--primary);
+}
+
+.footer-column a:hover{
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.socialIcon{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  gap: 8px;
+  margin-bottom: 0;
+}
+.socialIcon li   a{
+  display: flex;
+  height: 28px ;
+  width: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  justify-content: center;
+  align-items: center;
+}
+
+/* copyright section start  */
+.f-bottom{
+  background: #151d45;
+  padding: 20px 0;
+  color: #ffffff;
+}
+.f-bottom .row{
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 8px;
+}
+.policy a{
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.3 ease-in-out;
+}
+
+.policy a:hover{
+  color: var(--secondary);
+}
