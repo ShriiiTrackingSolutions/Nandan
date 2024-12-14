@@ -58,6 +58,14 @@
 .allLinksFooter{
   row-gap: 24px;
 }
+
+.navbar-brand {
+  margin-right: 24px;
+  width: 9rem;
+}
+.navbar-nav {
+  gap: 24px;
+}
  }
 
  @media (max-width: 1086.98px) {
@@ -96,6 +104,16 @@
   .f-bottom .inner{
     text-align: center;
   }
+
+  .ourService .reorder .leftCol{
+   order: 1;
+  }
+  .ourService .reorder .ImageCol{
+    order: 3;
+   }
+   .ourService .reorder .rightCol{
+    order: 2;
+   }
  }
 
  @media screen and (max-width: 912px) {
@@ -123,6 +141,21 @@ header .container-fluid {
 }
 .inner-container {
   padding: 30px 30px;
+}
+
+.ourService .leftCol .innerBox {
+  text-align: center;
+}
+
+.ourService .rightCol .innerBox {
+  text-align: center;
+}
+.BigSizebtn.btnBlue{
+  display: table;
+  width: 74%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
  }
