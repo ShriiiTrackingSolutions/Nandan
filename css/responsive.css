@@ -12,13 +12,40 @@
 
 @media only screen and (min-width: 1920px) {}
 
-@media (max-width: 1399.98px) {
 
+@media (max-width: 1500px) {
+  .ExtraPadd{
+    padding-left: 200px;
+  }
+}
+
+@media (max-width: 1480px) {
+  .ExtraPadd{
+    padding-left: 100px;
+  }
+  .idxStdt.std2 {
+    right: 28%;
+    top: 1.5%;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .ExtraPadd{
+    padding-left: 20px;
+  }
   .idxStdt.std1 {
     right: 30%;
     top: 27%;
 }
-    
+
+.secH {
+  font-size: 48px;
+}
+.idxStdt.std2 {
+  right: 27%;
+  top: 7.5%;
+}
+
  }
 
 @media only screen and (min-width: 1600px) and (max-width: 1900px) {}
@@ -31,6 +58,18 @@
 
 @media (max-width: 1199.98px) { 
 
+  .secH {
+    font-size: 40px;
+  }
+
+  .therdH {
+    font-size: 22px;
+  }
+  .ExtraPadd{
+    padding-left: 12px;
+  }
+  
+
   .Banner{
     background: url('../image/girl.png'), linear-gradient(var(--BgCream),var(--BgCream));
     background-position:  right bottom, center;
@@ -39,7 +78,7 @@
     isolation: isolate;
     }
     .idxStdt.std2 {
-      right: 5%;
+      right: 25%;
       top: 7.5%;
   }
   .idxStdt.std1 {
@@ -66,6 +105,9 @@
 .navbar-nav {
   gap: 24px;
 }
+.preferredLocation{
+  background: none;
+}
  }
 
  @media (max-width: 1086.98px) {
@@ -79,9 +121,30 @@
     right: 19%;
 }
 
+.countryCard .therdH{
+  font-size: 20px;
+}
+
  }
 
 @media (max-width: 991.98px) { 
+
+  .secH {
+    font-size: 36px;
+  }
+
+  .therdH {
+    font-size: 20px;
+  }
+
+  .navbar-nav {
+    gap: 0px;
+}
+.nav-link {
+  padding: 8px 0px !important;
+}
+
+
   .miniheader .container-fluid > .row {
     justify-content: center;
 }
@@ -124,6 +187,14 @@
 
 @media (max-width: 767.98px) {
 
+  .secH {
+    font-size: 32px;
+  }
+
+  .fifthH {
+    font-size: 18px;
+  }
+
   .miniheader .fifthH {
    font-size: 16px;
 }
@@ -157,11 +228,27 @@ header .container-fluid {
   margin-left: auto;
   margin-right: auto;
 }
-
+.FAQ_Section .accordion-button {
+  padding: 30px 18px;
+}
+.ourService {
+  padding-top: 0;
+}
  }
 
 @media (max-width: 575.98px) {
-  
+
+  .secH {
+    font-size: 26px;
+  }
+
+  .inner-container {
+   margin: 0;
+}
+.inner-container:first-child {
+ padding-bottom: 0;
+}
+
   .navbar-brand {
     margin-right: 15px;
     width: 12rem;

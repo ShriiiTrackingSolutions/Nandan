@@ -124,8 +124,8 @@ img {
   padding: 0px 20px;
 }
 .display-3 {
-  color: var(--skyblue);
-  font-family: "Teko", Helvetica, Arial, Lucida, sans-serif;
+  color: var(--primary);
+  font-family: "Maven Pro" ;
   font-weight: 600;
   font-size: 54px;
   text-align: center;
@@ -133,18 +133,22 @@ img {
 }
 
 .secH {
-  color: var(--skyblue);
-  font-family: "Teko", Helvetica, Arial, Lucida, sans-serif;
+  color: var(--primary);
+  font-family: "Maven Pro" ;
   font-style: normal;
+  text-transform: capitalize;
   font-weight: 700;
-  font-size: 48px;
-  margin-bottom: 30px;
+  max-width: 780px;
+  margin: auto;
+  font-size: 54px;
+  margin-bottom: 60px;
 }
 
 .therdH {
-  font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
+  font-family: "Maven Pro" ;
+  text-transform: capitalize;
   font-size: 24px;
-  color: var(--skyblue);
+  color: var(--primary);
   line-height: 1.4em;
   font-weight: bold;
   font-style: normal;
@@ -152,15 +156,18 @@ img {
 
 .fourthH {
   text-align: center;
-  font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
+  text-transform: capitalize;
+  font-family: "Maven Pro" ;
   font-size: 18px;
   font-weight: bold;
   line-height: 28.8px;
 }
 .fifthH {
+  font-family: "Maven Pro" ;
+  text-transform: capitalize;
   font-size: 20px;
-  font-weight: 400;
-  line-height: 1.33em;
+  line-height: 30px;
+  font-weight: 600;
 }
 
 /* header css start */
@@ -300,6 +307,7 @@ a.phoneNu span i {
   position: fixed;
   top: -112.48px; /* Hidden initially */
   width: 100%;
+  background-color: #ffffff !important;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: top 0.5s ease; /* Slide down animation */
   animation: slideDown 0.5s ease-in-out both;
@@ -315,6 +323,7 @@ a.phoneNu span i {
   }
 }
 .headerAnimate {
+  background-color: var(--BgCream) !important;
   animation: slideUp 0.5s ease-in-out both;
 }
 
@@ -328,6 +337,7 @@ a.phoneNu span i {
   }
 }
 .sticky-header.visible {
+  background-color: #ffffff !important;
   top: 0; /* Slide into view */
 }
 
@@ -389,12 +399,12 @@ a.phoneNu span i {
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav-link {
   color: var(--secondary);
-  border-bottom: 5px solid var(--secondary);
+  box-shadow: 0px 5px 0px 0px var(--secondary);
 }
 .nav-link:focus,
 .nav-link:hover {
   color: var(--secondary);
-  border-bottom: 5px solid var(--secondary);
+  box-shadow: 0px 5px 0px 0px var(--secondary);
 }
 .bg-light {
   background-color: var(--BgCream) !important;
@@ -407,6 +417,9 @@ a.phoneNu span i {
 .dropdown-item:hover {
   color: var(--secondary);
   background-color: rgba(0, 0, 0, 0.03);
+}
+.dropdown-menu[data-bs-popper] {
+  margin-top: 5px;
 }
 
 /* header css end */
@@ -429,8 +442,17 @@ a.phoneNu span i {
   line-height: 1.2em;
   margin-bottom: 20px;
 }
+.Banner span{
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--primary);
+  line-height: 28px;
+}
 .Banner .btnCommon {
   margin-top: 20px;
+}
+.ExtraPadd{
+  padding-left: 200px;
 }
 .Banner .counter {
   font-size: 42px;
@@ -451,7 +473,7 @@ a.phoneNu span i {
   top: 30%;
 }
 .idxStdt.std2 {
-  right: 5%;
+  right: 20%;
   top: 1.5%;
 }
 .idxStdt.std3 {
@@ -473,6 +495,9 @@ a.phoneNu span i {
 
 .defaultPadding {
   padding: 50px 0;
+}
+.defaultPadding100 {
+  padding: 100px 0;
 }
 
 .btnRed {
@@ -583,6 +608,7 @@ a.phoneNu span i {
 
 .Footer {
   color: var(--primary);
+  padding-top: 90px;
   text-align: center;
 }
 
@@ -798,7 +824,130 @@ a.phoneNu span i {
   margin-right: auto;
 }
 
-
-
-
 /* our service section end */
+
+
+/* preferred location section start */
+.countryCard{
+  text-align: center;
+  border-radius: 8px;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.10);
+}
+.countryCard .therdH a{
+  color: var(--darkGreen);
+}
+
+.preferredLocation .owl-stage{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.imgHover{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.imgHover a{
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.imgHover img{
+  transition: scale 0.3s ease-in-out;
+}
+
+.countryCard:hover .imgHover img{
+  scale: 1.1;
+}
+.CountryPageLink{
+  padding: 24px;
+}
+.CountryPageLink .btnCommon{
+  width: 100%;
+}
+
+.preferredLocation{
+  background: url('../image/team-icon-left.svg') no-repeat;
+  background-position: 70px 50%;
+}
+.preferredLocation .owl-dots{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preferredLocation .owl-dots .owl-dot{
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 7px;
+  background: none;
+  border: 1px solid #151d45;
+  margin: 0 2.5px;
+  border-radius: 5px;
+}
+
+.preferredLocation .owl-dots .owl-dot.active{
+  width: 42px;
+  background-color: var(--primary);
+}
+/* preferred location section end */
+
+/* frequent Asked question section start */
+.FAQ_Section{
+  background: #e1e3e5;
+}
+.FAQ_Section  .accordion-item {
+  background-color: #ffffff;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+.FAQ_Section  .accordion-item:last-child{
+  border-bottom: 0;
+}
+.FAQ_Section .accordion{
+  border-radius: 8px;
+  overflow: hidden;
+}
+.FAQ_Section .accordion-button:focus {
+  box-shadow: none;
+}
+
+.FAQ_Section .accordion-button{
+  padding: 30px;
+  text-transform: initial;
+}
+.FAQ_Section .accordion-button::after {
+  width: 28px;
+  height: 28px;
+  margin-left: auto;
+  border-radius: 50%;
+  background: none;
+  background-color: var(--secondary);
+  content: "\f107";
+  text-align: center;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  font-size: 14px;
+  color: #ffffff;
+}
+.FAQ_Section .accordion-button:not(.collapsed)::after {
+  background-color: #8b8b8b;
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+.FAQ_Section  .accordion-button:not(.collapsed) {
+  color: var(--primary);
+  background-color: #ffffff;
+}
+.FAQ_Section .accordion-body {
+  padding: 30px;
+  padding-top: 0;
+}
+
+/* frequent Asked question section end */
