@@ -125,7 +125,7 @@ img {
 }
 .display-3 {
   color: var(--primary);
-  font-family: "Maven Pro" ;
+  font-family: "Maven Pro";
   font-weight: 600;
   font-size: 54px;
   text-align: center;
@@ -134,7 +134,7 @@ img {
 
 .secH {
   color: var(--primary);
-  font-family: "Maven Pro" ;
+  font-family: "Maven Pro";
   font-style: normal;
   text-transform: capitalize;
   font-weight: 700;
@@ -145,7 +145,7 @@ img {
 }
 
 .therdH {
-  font-family: "Maven Pro" ;
+  font-family: "Maven Pro";
   text-transform: capitalize;
   font-size: 24px;
   color: var(--primary);
@@ -157,13 +157,13 @@ img {
 .fourthH {
   text-align: center;
   text-transform: capitalize;
-  font-family: "Maven Pro" ;
+  font-family: "Maven Pro";
   font-size: 18px;
   font-weight: bold;
   line-height: 28.8px;
 }
 .fifthH {
-  font-family: "Maven Pro" ;
+  font-family: "Maven Pro";
   text-transform: capitalize;
   font-size: 20px;
   line-height: 30px;
@@ -442,7 +442,7 @@ a.phoneNu span i {
   line-height: 1.2em;
   margin-bottom: 20px;
 }
-.Banner span{
+.Banner span {
   font-size: 24px;
   font-weight: 500;
   color: var(--primary);
@@ -451,7 +451,7 @@ a.phoneNu span i {
 .Banner .btnCommon {
   margin-top: 20px;
 }
-.ExtraPadd{
+.ExtraPadd {
   padding-left: 200px;
 }
 .Banner .counter {
@@ -698,7 +698,7 @@ a.phoneNu span i {
   -ms-transition: all 600ms ease;
   -o-transition: all 600ms ease;
 }
-.ourService  .leftCol .innerBox{
+.ourService .leftCol .innerBox {
   margin-bottom: 30px;
   text-align: end;
 }
@@ -710,11 +710,11 @@ a.phoneNu span i {
   transform: scale(-1) rotate(180deg);
 }
 
-.ourService  .rightCol .innerBox{
+.ourService .rightCol .innerBox {
   margin-bottom: 30px;
 }
 
-.ourService .ImageCol{
+.ourService .ImageCol {
   animation-name: float_up_down;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -727,41 +727,39 @@ a.phoneNu span i {
 
 @-webkit-keyframes float_up_down {
   0% {
-      -webkit-transform: translateY(0px);
-      transform: translateY(0px);
-      opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
   }
   50% {
-      -webkit-transform: translateY(30px);
-      transform: translateY(30px);
-      opacity: 1;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 1;
   }
   100% {
-      -webkit-transform: translateY(0px);
-      transform: translateY(0px);
-      opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 
 @keyframes float_up_down {
   0% {
-      transform: translateY(0px);
-      transform: translateY(0px);
-      opacity: 1;
+    transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
   }
   50% {
-      transform: translateY(30px);
-      transform: translateY(30px);
-      opacity: 1;
+    transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 1;
   }
   100% {
-      transform: translateY(0px);
-      transform: translateY(0px);
-      opacity: 1;
+    transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
-
-
 
 .btnBlue {
   display: inline-block;
@@ -799,7 +797,8 @@ a.phoneNu span i {
   position: absolute;
   z-index: 1;
   animation: slideBtn 3s infinite;
-  background:linear-gradient(left,
+  background: linear-gradient(
+    left,
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 0.8) 50%,
     rgba(128, 186, 232, 0) 99%,
@@ -816,7 +815,7 @@ a.phoneNu span i {
   }
 }
 
-.BigSizebtn.btnBlue{
+.BigSizebtn.btnBlue {
   display: table;
   width: 40%;
   margin-top: 40px;
@@ -826,30 +825,29 @@ a.phoneNu span i {
 
 /* our service section end */
 
-
 /* preferred location section start */
-.countryCard{
+.countryCard {
   text-align: center;
   border-radius: 8px;
   background-color: #ffffff;
   overflow: hidden;
-  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.10);
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
 }
-.countryCard .therdH a{
+.countryCard .therdH a {
   color: var(--darkGreen);
 }
 
-.preferredLocation .owl-stage{
+.preferredLocation .owl-stage {
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
-.imgHover{
+.imgHover {
   position: relative;
   overflow: hidden;
   margin-bottom: 24px;
 }
-.imgHover a{
+.imgHover a {
   position: absolute;
   display: inline-block;
   top: 0;
@@ -857,31 +855,31 @@ a.phoneNu span i {
   height: 100%;
   width: 100%;
 }
-.imgHover img{
+.imgHover img {
   transition: scale 0.3s ease-in-out;
 }
 
-.countryCard:hover .imgHover img{
+.countryCard:hover .imgHover img {
   scale: 1.1;
 }
-.CountryPageLink{
+.CountryPageLink {
   padding: 24px;
 }
-.CountryPageLink .btnCommon{
+.CountryPageLink .btnCommon {
   width: 100%;
 }
 
-.preferredLocation{
-  background: url('../image/team-icon-left.svg') no-repeat;
+.preferredLocation {
+  background: url("../image/team-icon-left.svg") no-repeat;
   background-position: 70px 50%;
 }
-.preferredLocation .owl-dots{
+.preferredLocation .owl-dots {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.preferredLocation .owl-dots .owl-dot{
+.preferredLocation .owl-dots .owl-dot {
   position: relative;
   display: block;
   width: 28px;
@@ -892,26 +890,26 @@ a.phoneNu span i {
   border-radius: 5px;
 }
 
-.preferredLocation .owl-dots .owl-dot.active{
+.preferredLocation .owl-dots .owl-dot.active {
   width: 42px;
   background-color: var(--primary);
 }
 /* preferred location section end */
 
 /* frequent Asked question section start */
-.FAQ_Section{
+.FAQ_Section {
   background: #e1e3e5;
 }
-.FAQ_Section  .accordion-item {
+.FAQ_Section .accordion-item {
   background-color: #ffffff;
   border-left: 0;
   border-right: 0;
   border-top: 0;
 }
-.FAQ_Section  .accordion-item:last-child{
+.FAQ_Section .accordion-item:last-child {
   border-bottom: 0;
 }
-.FAQ_Section .accordion{
+.FAQ_Section .accordion {
   border-radius: 8px;
   overflow: hidden;
 }
@@ -919,7 +917,7 @@ a.phoneNu span i {
   box-shadow: none;
 }
 
-.FAQ_Section .accordion-button{
+.FAQ_Section .accordion-button {
   padding: 30px;
   text-transform: initial;
 }
@@ -941,7 +939,7 @@ a.phoneNu span i {
   background-color: #8b8b8b;
   transform: var(--bs-accordion-btn-icon-transform);
 }
-.FAQ_Section  .accordion-button:not(.collapsed) {
+.FAQ_Section .accordion-button:not(.collapsed) {
   color: var(--primary);
   background-color: #ffffff;
 }
@@ -951,3 +949,81 @@ a.phoneNu span i {
 }
 
 /* frequent Asked question section end */
+
+/* country visa Links section start */
+.countryVisaLinksBox {
+  text-align: center;
+  box-shadow: 0px 0px 14px 0px rgba(0, 103, 218, 0.2);
+  border-color: var(--secondary);
+  border-style: solid;
+  border-top-width: 3px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-radius: 4px;
+  padding: 30px 12px;
+  height: 100%;
+  max-height: 100%;
+  transition: order-color 0.3s ease-in-out;
+}
+.countryVisaLinksBox:hover{
+  border-color: var(--primary)
+}
+
+.LinkStyleNew {
+  position: relative;
+  display: inline-block;
+  padding: 8px 24px;
+  line-height: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  isolation: isolate;
+  color: var(--Black);
+  transition: all 0.3s ease-in-out;
+}
+.LinkStyleNew::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  height: 0%;
+  width: 100%;
+  background-color: var(--primary);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.LinkStyleNew::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background-color: #d90f31;
+  z-index: -2;
+  transition: all 0.3s ease-in-out;
+}
+.LinkStyleNew:hover {
+  color: #ffffff;
+}
+.LinkStyleNew:hover::before {
+  transition-delay: 0.2s;
+  height: 100%;
+}
+.LinkStyleNew:hover::after {
+  height: 100%;
+}
+.countryVisaLinksBox ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.countryVisaLinksBox ul li{
+  margin-top: 8px;
+}
+.countryVisaLinks .container-fluid>.row{
+  row-gap: 24px;
+}
+/* country visa Links section end */

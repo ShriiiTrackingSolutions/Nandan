@@ -68,6 +68,21 @@
   .ExtraPadd{
     padding-left: 12px;
   }
+
+  #accordionExample  #headingFive button{
+   border-radius: 0;
+  }
+  .FAQ_Section .accordion {
+    border-radius: 0;
+}
+  #accordionExample2  #headingOne2 button{
+   border-radius: 0;
+  }
+
+  .FAQ_Section   #accordionExample  .accordion-item:last-child {
+    border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
+
   
 
   .Banner{
