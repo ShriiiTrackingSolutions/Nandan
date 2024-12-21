@@ -141,7 +141,7 @@ img {
   max-width: 780px;
   margin: auto;
   font-size: 54px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .therdH {
@@ -1027,3 +1027,74 @@ a.phoneNu span i {
   row-gap: 24px;
 }
 /* country visa Links section end */
+
+
+
+/*----------------
+   Visitor Page UK
+------------------*/
+
+.VisaBanner{
+background: url('../image/UkVisitor.png') no-repeat center;
+background-size: cover;
+padding: 140px 95px;
+}
+
+.VisaBanner.UK_VistorPage0{
+  background-position: right;
+}
+
+.VisaBanner .container-fluid {
+  width: 100%;
+  max-width: 100%;
+}
+
+.VisaBanner{
+  color: #ffffff;
+}
+
+.VisaBanner .therdH,.VisaBanner .display-3{
+  color: #ffffff;
+  text-align: left;
+}
+
+.VisaBanner ul{
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+
+.flagHed{
+gap: 10px;
+}
+
+.flagHed img{
+  width: 32px;
+  }
+
+  .visaContentSection .therdH{
+    margin-bottom: 30px;
+  }
+
+  .visaContentSection p{
+    margin-bottom: 0;
+  }
+
+  
+
+/*------------------
+   Visitor Page USA
+-------------------*/
+    
+    .VisaBanner.USA_VistorPage0{
+    background:linear-gradient(to right,#10101060,#10101000) no-repeat center,  url('../image/USA_Banner.png') no-repeat center;
+    background-size: cover,cover;
+    background-position: right;
+    padding: 140px 95px;
+    }
+    
+    .VisaBanner.CANADA_VistorPage0{
+      background:linear-gradient(to right,#10101060,#10101000) no-repeat center,  url('../image/CanadaBanner.png') no-repeat;
+      background-size: cover,cover;
+      background-position: center, top center;
+      padding: 140px 95px;
+    }
