@@ -193,6 +193,15 @@
     order: 2;
    }
 
+   .HighlightedTopics .secH{
+    margin-left: 0;
+   }
+
+   .Topics2 .container-fluid>.row{
+    flex-direction: column-reverse;
+    row-gap: 24px;
+   }
+
  }
 
  @media screen and (max-width: 912px) {

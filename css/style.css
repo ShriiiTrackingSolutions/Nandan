@@ -1098,3 +1098,156 @@ gap: 10px;
       background-position: center, top center;
       padding: 140px 95px;
     }
+
+    
+
+
+/*--------------
+   SOP Page
+---------------*/
+
+
+    .newBanner {
+      background-image: linear-gradient(180deg, #0f0f0fb0 0%, #0f0f0fb0 100%),
+        url("../image/SOP_Banner.png");
+      background-position: center, center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover, cover;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 400px;
+    }
+    .newBanner .display-3{
+      color: #ffffff;
+    }
+    
+    .breadcrumb {
+      justify-content: center;
+      margin-bottom: 0;
+    }
+    
+    .breadcrumb-item {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+    .breadcrumb-item.active {
+      color: var(--BgCream);
+    }
+    
+    .breadcrumb-item a {
+      color: var(--BGrey);
+      transition: all 0.3s ease-in-out;
+    }
+    .breadcrumb-item a:hover {
+      color: #ffffff;
+    }
+    
+    .breadcrumb-item + .breadcrumb-item::before {
+      color: #ffffff;
+    }
+    
+
+    /* Highlighted Topics section start */
+    .HighlightedTopics{
+      background-color: var(--BgCream);
+    }
+.PointsList{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+}
+.PointsList li{
+  margin: 8px 0;
+  display: flex;                  
+  gap: 4px;
+}
+.PointsList li i{
+  color: var(--secondary);
+}
+.PointsList li i::before{
+  vertical-align: -webkit-baseline-middle;
+}
+p.fifthH{
+  text-transform: initial;
+}
+
+    /* Highlighted Topics section end */
+
+
+    /* What is an SOP? section start */
+.WhatIsSOP{
+  background-image: linear-gradient(180deg, #0f0f0f71 0%, #0f0f0f71 100%),
+  url("../image/SOPSection.png");
+background-position: center, center;
+background-repeat: no-repeat, no-repeat;
+background-size: cover, cover;
+padding: 120px 0;
+}
+.WhatIsSOP .secH,.WhatIsSOP .fifthH{
+  color: #ffffff;
+}
+
+.imgStyleShadow{
+  box-shadow: 0px 0px 26px #9e9e9e;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.Topics2{
+  background-color: #fdcbdf48;
+}
+
+    /* What is an SOP? section end */
+
+/*----------------
+   Contact Us Page
+-----------------*/
+
+    
+    /* contact Info Section start */
+
+    .contactInfo {
+      background-color: var(--BgCream);
+    }
+
+.contactInfo .therdH{
+  color: var(--secondary);
+  
+}
+.contactInfo .secH{
+  margin-bottom: 24px;
+}
+
+.contactLinkCard{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+}
+.contactLinkCard li{
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;                  
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.contactLinkCard  li i{
+  color: var(--secondary);
+}
+.contactLinkCard  li i::before{
+  vertical-align: -webkit-baseline-middle;
+}
+.contactLinkCard  li a{
+  color: var(--primary);
+  transition: 0.3s ease-in-out;
+}
+.contactLinkCard  li a:hover{
+  color: var(--secondary);
+}
+
+    /* contact Info Section end */
