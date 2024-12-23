@@ -140,6 +140,7 @@
   font-size: 20px;
 }
 
+
  }
 
 @media (max-width: 991.98px) { 
@@ -274,8 +275,11 @@ header .container-fluid {
     background:linear-gradient(to right,#10101060,#10101060) no-repeat center,  url('../image/USA_Banner.png') no-repeat center;
     background-size: cover,cover;
     background-position: right;
-    padding: 140px 95px;
+    padding: 140px 12px;
     }
+    .VisaBanner.CANADA_VistorPage0 {
+      padding: 140px 12px;
+  }
   .VisaBanner ul{
     margin-left: auto;
     padding: 16px  16px 16px 32px;
@@ -295,12 +299,24 @@ header .container-fluid {
 .visaContentSection .ReverseRowD{
   flex-direction: column-reverse;
 }
+.Footer {
+  padding-top: 50px;
+}
+.maps iframe{
+ margin-top: 30px;
+  }
+
+  .newBanner.conatctPage0 {
+    background-image: linear-gradient(180deg, #0f0f0f69 0%, #0f0f0f69 100%),
+      url("../image/ContactBanner.png");
+  }
  }
 
 @media (max-width: 575.98px) {
 
   .secH {
     font-size: 26px;
+    margin-bottom: 34px;
   }
 
   .inner-container {
@@ -319,6 +335,22 @@ header .container-fluid {
 }
 .package-info-block::after{
   display: none;
+}
+.maps iframe{
+  aspect-ratio: unset;
+  min-height: 500px;
+  }
+  
+  .allLinksFooter {
+    margin-top: 24px !important;
+  }
+
+  .defaultPadding100 {
+    padding: 50px 0;
+}
+
+.BrandFooter {
+  width: 12rem;
 }
 
 }

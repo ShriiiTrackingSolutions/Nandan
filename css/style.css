@@ -966,8 +966,8 @@ a.phoneNu span i {
   max-height: 100%;
   transition: order-color 0.3s ease-in-out;
 }
-.countryVisaLinksBox:hover{
-  border-color: var(--primary)
+.countryVisaLinksBox:hover {
+  border-color: var(--primary);
 }
 
 .LinkStyleNew {
@@ -1020,27 +1020,25 @@ a.phoneNu span i {
   margin: 0;
   text-align: center;
 }
-.countryVisaLinksBox ul li{
+.countryVisaLinksBox ul li {
   margin-top: 8px;
 }
-.countryVisaLinks .container-fluid>.row{
+.countryVisaLinks .container-fluid > .row {
   row-gap: 24px;
 }
 /* country visa Links section end */
-
-
 
 /*----------------
    Visitor Page UK
 ------------------*/
 
-.VisaBanner{
-background: url('../image/UkVisitor.png') no-repeat center;
-background-size: cover;
-padding: 140px 95px;
+.VisaBanner {
+  background: url("../image/UkVisitor.png") no-repeat center;
+  background-size: cover;
+  padding: 140px 95px;
 }
 
-.VisaBanner.UK_VistorPage0{
+.VisaBanner.UK_VistorPage0 {
   background-position: right;
 }
 
@@ -1049,205 +1047,270 @@ padding: 140px 95px;
   max-width: 100%;
 }
 
-.VisaBanner{
+.VisaBanner {
   color: #ffffff;
 }
 
-.VisaBanner .therdH,.VisaBanner .display-3{
+.VisaBanner .therdH,
+.VisaBanner .display-3 {
   color: #ffffff;
   text-align: left;
 }
 
-.VisaBanner ul{
+.VisaBanner ul {
   margin-top: 30px;
   text-transform: capitalize;
 }
 
-.flagHed{
-gap: 10px;
+.flagHed {
+  gap: 10px;
 }
 
-.flagHed img{
+.flagHed img {
   width: 32px;
-  }
+}
 
-  .visaContentSection .therdH{
-    margin-bottom: 30px;
-  }
+.visaContentSection .therdH {
+  margin-bottom: 30px;
+}
 
-  .visaContentSection p{
-    margin-bottom: 0;
-  }
-
-  
+.visaContentSection p {
+  margin-bottom: 0;
+}
 
 /*------------------
    Visitor Page USA
 -------------------*/
-    
-    .VisaBanner.USA_VistorPage0{
-    background:linear-gradient(to right,#10101060,#10101000) no-repeat center,  url('../image/USA_Banner.png') no-repeat center;
-    background-size: cover,cover;
-    background-position: right;
-    padding: 140px 95px;
-    }
-    
-    .VisaBanner.CANADA_VistorPage0{
-      background:linear-gradient(to right,#10101060,#10101000) no-repeat center,  url('../image/CanadaBanner.png') no-repeat;
-      background-size: cover,cover;
-      background-position: center, top center;
-      padding: 140px 95px;
-    }
 
-    
+.VisaBanner.USA_VistorPage0 {
+  background: linear-gradient(to right, #10101060, #10101000) no-repeat center,
+    url("../image/USA_Banner.png") no-repeat center;
+  background-size: cover, cover;
+  background-position: right;
+  padding: 140px 95px;
+}
 
+.VisaBanner.CANADA_VistorPage0 {
+  background: linear-gradient(to right, #10101060, #10101000) no-repeat center,
+    url("../image/CanadaBanner.png") no-repeat;
+  background-size: cover, cover;
+  background-position: center, top center;
+  padding: 140px 95px;
+}
 
 /*--------------
    SOP Page
 ---------------*/
 
+.newBanner {
+  background-image: linear-gradient(180deg, #0f0f0fb0 0%, #0f0f0fb0 100%),
+    url("../image/SOP_Banner.png");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
 
-    .newBanner {
-      background-image: linear-gradient(180deg, #0f0f0fb0 0%, #0f0f0fb0 100%),
-        url("../image/SOP_Banner.png");
-      background-position: center, center;
-      background-repeat: no-repeat, no-repeat;
-      background-size: cover, cover;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 400px;
-    }
-    .newBanner .display-3{
-      color: #ffffff;
-    }
-    
-    .breadcrumb {
-      justify-content: center;
-      margin-bottom: 0;
-    }
-    
-    .breadcrumb-item {
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1.4;
-    }
-    .breadcrumb-item.active {
-      color: var(--BgCream);
-    }
-    
-    .breadcrumb-item a {
-      color: var(--BGrey);
-      transition: all 0.3s ease-in-out;
-    }
-    .breadcrumb-item a:hover {
-      color: #ffffff;
-    }
-    
-    .breadcrumb-item + .breadcrumb-item::before {
-      color: #ffffff;
-    }
-    
+.newBanner.conatctPage0 {
+  background-image: linear-gradient(180deg, #0f0f0f1f 0%, #0f0f0f36 100%),
+    url("../image/ContactBanner.png");
+  background-position: right;
+}
+.newBanner .display-3 {
+  color: #ffffff;
+}
 
-    /* Highlighted Topics section start */
-    .HighlightedTopics{
-      background-color: var(--BgCream);
-    }
-.PointsList{
+.breadcrumb {
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.breadcrumb-item.active {
+  color: var(--BgCream);
+}
+
+.breadcrumb-item a {
+  color: var(--BGrey);
+  transition: all 0.3s ease-in-out;
+}
+.breadcrumb-item a:hover {
+  color: #ffffff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #ffffff;
+}
+
+/* Highlighted Topics section start */
+.HighlightedTopics {
+  background-color: var(--BgCream);
+}
+.PointsList {
   list-style: none;
   padding: 0;
   margin: 0;
   margin-top: 16px;
 }
-.PointsList li{
+.PointsList li {
   margin: 8px 0;
-  display: flex;                  
+  display: flex;
   gap: 4px;
 }
-.PointsList li i{
+.PointsList li i {
   color: var(--secondary);
 }
-.PointsList li i::before{
+.PointsList li i::before {
   vertical-align: -webkit-baseline-middle;
 }
-p.fifthH{
+p.fifthH {
   text-transform: initial;
 }
 
-    /* Highlighted Topics section end */
+/* Highlighted Topics section end */
 
-
-    /* What is an SOP? section start */
-.WhatIsSOP{
+/* What is an SOP? section start */
+.WhatIsSOP {
   background-image: linear-gradient(180deg, #0f0f0f71 0%, #0f0f0f71 100%),
-  url("../image/SOPSection.png");
-background-position: center, center;
-background-repeat: no-repeat, no-repeat;
-background-size: cover, cover;
-padding: 120px 0;
+    url("../image/SOPSection.png");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  padding: 120px 0;
 }
-.WhatIsSOP .secH,.WhatIsSOP .fifthH{
+.WhatIsSOP .secH,
+.WhatIsSOP .fifthH {
   color: #ffffff;
 }
 
-.imgStyleShadow{
+.imgStyleShadow {
   box-shadow: 0px 0px 26px #9e9e9e;
   border-radius: 8px;
   overflow: hidden;
 }
-.Topics2{
+.Topics2 {
   background-color: #fdcbdf48;
 }
 
-    /* What is an SOP? section end */
+/* What is an SOP? section end */
 
 /*----------------
    Contact Us Page
 -----------------*/
 
-    
-    /* contact Info Section start */
+/* contact Info Section start */
 
-    .contactInfo {
-      background-color: var(--BgCream);
-    }
-
-.contactInfo .therdH{
-  color: var(--secondary);
-  
+.contactInfo {
+  background-color: var(--BgCream);
 }
-.contactInfo .secH{
+
+.contactInfo .therdH {
+  color: var(--secondary);
+}
+.contactInfo .secH {
   margin-bottom: 24px;
 }
 
-.contactLinkCard{
+.contactLinkCard {
   list-style: none;
   padding: 0;
   margin: 0;
   margin-top: 40px;
 }
-.contactLinkCard li{
+.contactLinkCard li {
   margin: 8px 0;
   font-size: 18px;
   font-weight: 600;
-  display: flex;                  
+  display: flex;
   gap: 8px;
   margin-top: 24px;
 }
 
-.contactLinkCard  li i{
+.contactLinkCard li i {
   color: var(--secondary);
 }
-.contactLinkCard  li i::before{
+.contactLinkCard li i::before {
   vertical-align: -webkit-baseline-middle;
 }
-.contactLinkCard  li a{
+.contactLinkCard li a {
   color: var(--primary);
   transition: 0.3s ease-in-out;
 }
-.contactLinkCard  li a:hover{
+.contactLinkCard li a:hover {
   color: var(--secondary);
 }
+.maps iframe {
+  aspect-ratio: 1;
+}
 
-    /* contact Info Section end */
+/* contact Info Section end */
+
+/*------------------
+   Student Visa Page
+-------------------*/
+
+.VisaBanner.USA_studentPage0 {
+  background: linear-gradient(to right, #10101060, #10101000) no-repeat center,
+    url("../image/SutentVisaUSA.png") no-repeat center;
+  background-size: cover, cover;
+  background-position: right;
+}
+
+.imageGrid{
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 100px;
+}
+
+.ImageGridWrap{
+  position: relative;
+}
+
+.KeyCriteria .therdH{
+margin-bottom: 28px;
+}
+
+.KeyCriteria .fourthH{
+  text-align: left;
+  color: var(--primary);
+}
+
+
+.KeyCriteria .outerUL {
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.KeyCriteria .outerUL>li {
+  margin: 8px 0;
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.KeyCriteria .outerUL>li svg{
+margin-top: 4px;
+flex-shrink: 0;
+}
+
+.KeyCriteria .outerUL ul{
+  margin-top: 16px;
+  padding-left: 20px;
+}
+.KeyCriteria .outerUL ul li{
+  margin-top: 8px;
+}
+.paraStyle{
+  color: var(--secondary);
+  font-weight: 500;
+}
+
