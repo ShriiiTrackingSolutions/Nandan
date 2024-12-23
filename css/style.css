@@ -1186,6 +1186,11 @@ p.fifthH {
   background-size: cover, cover;
   padding: 120px 0;
 }
+.imgSop{
+  background-image: linear-gradient(180deg, #0f0f0fa8 0%, #0f0f0fa8 100%),
+  url("../image/SOP_Section.png");
+}
+
 .WhatIsSOP .secH,
 .WhatIsSOP .fifthH {
   color: #ffffff;
@@ -1314,3 +1319,16 @@ flex-shrink: 0;
   font-weight: 500;
 }
 
+.mrIndia{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom:100% ;
+  height: 150px;
+}
+.WhatIsSOP{
+  position: relative;
+}
+.HighlightedTopics{
+  position: relative;
+}
