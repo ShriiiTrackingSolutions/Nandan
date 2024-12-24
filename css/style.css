@@ -426,9 +426,9 @@ a.phoneNu span i {
 
 /* banner css start */
 .Banner {
-  background: url("../image/girl.png"),
+  background: url("../image/WorldMap.png"),
     linear-gradient(var(--BgCream), var(--BgCream));
-  background-position: right calc(100% + 70px), center;
+  background-position: calc(100% - 200px) calc(100% + 80px), center;
   background-repeat: no-repeat no-repeat;
   background-size: auto 600px, cover;
   position: relative;
@@ -468,28 +468,6 @@ a.phoneNu span i {
   max-width: 750px;
 }
 
-.idxStdt.std1 {
-  right: 28%;
-  top: 30%;
-}
-.idxStdt.std2 {
-  right: 20%;
-  top: 1.5%;
-}
-.idxStdt.std3 {
-  right: 5%;
-  top: 72%;
-}
-.idxStdt {
-  position: absolute;
-  background-color: #fff;
-  padding: 0.8rem;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 0px 10px #d5d5d5;
-}
 
 /* banner css end */
 
@@ -551,12 +529,25 @@ a.phoneNu span i {
 .inner-container .inner-box {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 12px;
+  background-color: #d6d6d6;
+  padding-top: 40px;
+  position: relative;
+  height: 100%;
+  max-height: 100%;
+  border-radius: 8px;
   gap: 24px 24px;
+
 }
 
 .package-info-block .inner-box .icon {
   display: flex;
   flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
   justify-content: center;
   align-items: center;
   width: 65px;
@@ -569,29 +560,17 @@ a.phoneNu span i {
   box-shadow: 0px 0px 4px #000000;
 }
 .package-info-block {
+  padding-top: 34px;
   position: relative;
 }
-.package-info-block::after {
-  content: "";
-  top: 50%;
-  right: 9%;
-  position: absolute;
-  display: inline-block;
-  transform: translateY(-50%);
-  width: 1px;
-  height: 45px;
-  background-color: #dedede;
-}
-.package-info-block:last-child::after {
-  display: none;
-}
+
 .inner-container {
   margin-top: 15px;
   padding: 30px 50px;
   row-gap: 30px;
   border-radius: 6px;
   margin-bottom: 30px;
-  background-color: #f3f7fa;
+  background-color: #2a6999;
 }
 /* services card section end */
 
@@ -698,9 +677,9 @@ a.phoneNu span i {
   -ms-transition: all 600ms ease;
   -o-transition: all 600ms ease;
 }
-.ourService .leftCol .innerBox {
+.ourService  .innerBox {
   margin-bottom: 30px;
-  text-align: end;
+  text-align: center;
 }
 .ourService .innerBox:hover .icon-box {
   -webkit-transform: scale(-1) rotate(180deg);
@@ -710,9 +689,7 @@ a.phoneNu span i {
   transform: scale(-1) rotate(180deg);
 }
 
-.ourService .rightCol .innerBox {
-  margin-bottom: 30px;
-}
+
 
 .ourService .ImageCol {
   animation-name: float_up_down;
@@ -825,76 +802,7 @@ a.phoneNu span i {
 
 /* our service section end */
 
-/* preferred location section start */
-.countryCard {
-  text-align: center;
-  border-radius: 8px;
-  background-color: #ffffff;
-  overflow: hidden;
-  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
-}
-.countryCard .therdH a {
-  color: var(--darkGreen);
-}
 
-.preferredLocation .owl-stage {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.imgHover {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 24px;
-}
-.imgHover a {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-.imgHover img {
-  transition: scale 0.3s ease-in-out;
-}
-
-.countryCard:hover .imgHover img {
-  scale: 1.1;
-}
-.CountryPageLink {
-  padding: 24px;
-}
-.CountryPageLink .btnCommon {
-  width: 100%;
-}
-
-.preferredLocation {
-  background: url("../image/team-icon-left.svg") no-repeat;
-  background-position: 70px 50%;
-}
-.preferredLocation .owl-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.preferredLocation .owl-dots .owl-dot {
-  position: relative;
-  display: block;
-  width: 28px;
-  height: 7px;
-  background: none;
-  border: 1px solid #151d45;
-  margin: 0 2.5px;
-  border-radius: 5px;
-}
-
-.preferredLocation .owl-dots .owl-dot.active {
-  width: 42px;
-  background-color: var(--primary);
-}
-/* preferred location section end */
 
 /* frequent Asked question section start */
 .FAQ_Section {
@@ -1336,5 +1244,30 @@ flex-shrink: 0;
   position: relative;
 }
 .HighlightedTopics{
+  position: relative;
+}
+
+.table-container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.table thead {
+  background-color: #1976d2; /* Deep blue header */
+  color: #ffffff;
+}
+.table tbody tr:nth-child(even) {
+  background-color: #bbdefb; /* Light blue rows */
+}
+.table tbody tr:nth-child(odd) {
+  background-color: #e3f2fd; /* Sky blue rows */
+}
+.table-hover tbody tr:hover {
+  background-color: #90caf9; /* Hover effect */
+}
+
+.table-container table {
   position: relative;
 }

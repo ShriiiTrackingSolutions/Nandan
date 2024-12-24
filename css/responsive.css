@@ -17,33 +17,30 @@
   .ExtraPadd{
     padding-left: 200px;
   }
+
+  .Banner{
+    background: url('../image/WorldMap.png'), linear-gradient(var(--BgCream),var(--BgCream));
+    background-repeat: no-repeat no-repeat;
+    background-size: auto 600px, cover;
+    background-position: calc(100% - 50px) top, center;
+    isolation: isolate;
+    }
 }
 
 @media (max-width: 1480px) {
   .ExtraPadd{
     padding-left: 100px;
   }
-  .idxStdt.std2 {
-    right: 28%;
-    top: 1.5%;
-  }
+
 }
 
 @media (max-width: 1399.98px) {
   .ExtraPadd{
     padding-left: 20px;
   }
-  .idxStdt.std1 {
-    right: 30%;
-    top: 27%;
-}
 
 .secH {
   font-size: 48px;
-}
-.idxStdt.std2 {
-  right: 27%;
-  top: 7.5%;
 }
 
  }
@@ -86,21 +83,13 @@
   
 
   .Banner{
-    background: url('../image/girl.png'), linear-gradient(var(--BgCream),var(--BgCream));
-    background-position:  right bottom, center;
+    background: url('../image/WorldMap.png'), linear-gradient(var(--BgCream),var(--BgCream));
     background-repeat: no-repeat no-repeat;
     background-size: auto 465px, cover;
+    background-position: calc(100% - 50px) top, center;
     isolation: isolate;
     }
-    .idxStdt.std2 {
-      right: 25%;
-      top: 7.5%;
-  }
-  .idxStdt.std1 {
-    right: 25%;
-    top: 28%;
-    z-index: -1;
-}
+
 .display-3 {
   font-size: 36px;
 }
@@ -129,12 +118,7 @@
   .package-info-block{
     width: 50%;
   }
-  .package-info-block:nth-child(even)::after{
-    display: none;
-  }
-  .package-info-block::after {
-    right: 19%;
-}
+
 
 .countryCard .therdH{
   font-size: 20px;
@@ -171,9 +155,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   }
-  .idxStdt{
-    display: none;
-  }
+
   .f-bottom .row{
     justify-content: center;
     align-items: center;
@@ -184,15 +166,6 @@
     text-align: center;
   }
 
-  .ourService .reorder .leftCol{
-   order: 1;
-  }
-  .ourService .reorder .ImageCol{
-    order: 3;
-   }
-   .ourService .reorder .rightCol{
-    order: 2;
-   }
 
    .HighlightedTopics .secH{
     margin-left: 0;
@@ -242,13 +215,8 @@ header .container-fluid {
   padding: 30px 30px;
 }
 
-.ourService .leftCol .innerBox {
-  text-align: center;
-}
 
-.ourService .rightCol .innerBox {
-  text-align: center;
-}
+
 .BigSizebtn.btnBlue{
   display: table;
   width: 74%;
@@ -318,6 +286,37 @@ header .container-fluid {
   }
  }
 
+
+ @media screen and (max-width: 600px) {
+
+  table.ResponsiveTable thead {
+    display: none;
+  }
+
+  table.ResponsiveTable tbody td {
+    display: block;
+  }
+
+  table.ResponsiveTable tbody tr td:first-child {
+    background: var(--primary);
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  table.ResponsiveTable tbody td:before {
+    content: attr(data-th);
+    font-weight: normal;
+    display: block;
+  }
+  table.ResponsiveTable tbody > tr> td:nth-child(2)::before {
+   font-weight: bold;
+  }
+}
+
+
+
+
 @media (max-width: 575.98px) {
 
   .secH {
@@ -339,9 +338,7 @@ header .container-fluid {
 .package-info-block{
   width: 100%;
 }
-.package-info-block::after{
-  display: none;
-}
+
 .maps iframe{
   aspect-ratio: unset;
   min-height: 500px;
