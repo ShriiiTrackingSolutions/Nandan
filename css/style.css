@@ -965,8 +965,18 @@ a.phoneNu span i {
   text-align: left;
 }
 
+.VisaBanner .display-3{
+  font-size: 64px;
+}
+
+.VisaBanner .therdH{
+  font-size: 32px;
+}
+
 .VisaBanner ul {
   margin-top: 30px;
+  font-size: 24px;
+  line-height: 34px;
   text-transform: capitalize;
 }
 
@@ -1180,6 +1190,26 @@ p.fifthH {
 .VisaBanner.UK_studentPage0{
   background: linear-gradient(to right, #10101060, #10101000) no-repeat center,
   url("../image/UK_student.png") no-repeat center;
+background-size: cover, cover;
+}
+.VisaBanner.Europe_studentPage0{
+  background: linear-gradient(to right, #10101060, #10101000) no-repeat center,
+  url("../image/Europe_Banner.png") no-repeat center;
+background-size: cover, cover;
+}
+.VisaBanner.Canada_studentPage0{
+  background: linear-gradient(to right, #10101060, #10101000) no-repeat center,
+  url("../image/Canada_Banner.png") no-repeat center;
+background-size: cover, cover;
+}
+.VisaBanner.Australia_studentPage0{
+  background: linear-gradient(to right, #10101060, #10101000) no-repeat center,
+  url("../image/Australia_Banner.png") no-repeat center right;
+background-size: cover, cover;
+}
+.VisaBanner.NewZealand_studentPage0{
+  background: linear-gradient(to right, #10101060, #10101000) no-repeat center,
+  url("../image/NewZealand_Banner.png") no-repeat center right;
 background-size: cover, cover;
 }
 
