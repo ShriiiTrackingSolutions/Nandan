@@ -4,8 +4,8 @@
   --textLightGrey: #505050;
   --darkGreen: #10221b;
   --LightBgGrey: #f3f7fa;
-  --primary: #151d45;
-  --secondary: #d90f2f;
+  --primary: #0b4546;
+  --secondary: #0074E1;
   --BgCream: #fcf9f6;
   --BGrey: #e1e3e5;
 }
@@ -128,7 +128,15 @@
   width: 100% !important;
 }
 
+.footer-address{
+  max-width: 358px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
  }
+
+ 
  @media (min-width: 992px) {
   .VisaBanner .col-lg-6{
     width: 100% !important;
@@ -187,6 +195,10 @@
    .VisaBanner .display-3{
     font-size: 46px;
   }
+     .newFont{
+      font-family: 'Cooper';
+      font-size: 50px;
+    }
   .VisaBanner .therdH{
     font-size: 26px;
   }
@@ -318,6 +330,11 @@ header .container-fluid {
   .VisaBanner .display-3{
     font-size: 34px;
   }
+
+  .newFont{
+    font-family: 'Cooper';
+    font-size: 38px;
+  }
   .VisaBanner .therdH{
     font-size: 24px;
   }
@@ -339,6 +356,8 @@ header .container-fluid {
   table.ResponsiveTable tbody td {
     display: block;
   }
+
+ 
 
   table.ResponsiveTable tbody tr td:first-child {
     background: var(--primary);
@@ -362,6 +381,15 @@ header .container-fluid {
 
 @media (max-width: 575.98px) {
 
+
+  .Banner.HomePage0 .display-3{
+    font-size: 24px;
+    }
+    
+    .newFont{
+      font-family: 'Cooper';
+      font-size: 28px;
+    }
   .secH {
     font-size: 26px;
     margin-bottom: 34px;
@@ -401,6 +429,7 @@ header .container-fluid {
   .defaultPadding100 {
     padding: 50px 0;
 }
+
 
 .BrandFooter {
   width: 12rem;
