@@ -264,6 +264,13 @@ header .container-fluid {
       padding: 140px 12px;
   }
 
+  .VisaBanner.NewZealand_VistorPage0{
+    background: linear-gradient(to right, #10101080 15%, #10101080) no-repeat center,
+      url("../image/NewZealand_bannerVisitor.png") no-repeat;
+    background-size: cover, cover;
+    background-position: center, center right;
+  }
+
   .VisaBanner.UK_studentPage0{
     background: linear-gradient(to right, #10101060, #10101060) no-repeat center,
     url("../image/UK_student.png") no-repeat center;
@@ -273,6 +280,13 @@ header .container-fluid {
     background: linear-gradient(to right, #1010108a, #1010108a) no-repeat center,
     url("../image/Australia_Banner.png") no-repeat center right;
     background-size: cover, cover;
+  }
+
+  .VisaBanner.Singapore_VistorPage0{
+    background: linear-gradient(to right, #1010108a 15%, #1010108a) no-repeat center,
+      url("../image/SingaporeVisitor.png") no-repeat;
+    background-size: cover, cover;
+    background-position: center, center right;
   }
   .VisaBanner ul{
     margin-left: auto;
@@ -300,10 +314,6 @@ header .container-fluid {
  margin-top: 30px;
   }
 
-  .newBanner.conatctPage0 {
-    background-image: linear-gradient(180deg, #0f0f0f69 0%, #0f0f0f69 100%),
-      url("../image/ContactBanner.png");
-  }
 
   .VisaBanner .display-3{
     font-size: 34px;
