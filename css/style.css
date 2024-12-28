@@ -105,7 +105,7 @@
   --darkGreen: #10221b;
   --LightBgGrey: #f3f7fa;
   --primary: #0b4546;
-  --secondary: #0074E1;
+  --secondary: #d90f2f;
   --BgCream: #fcf9f6;
   --BGrey: #e1e3e5;
 }
@@ -592,6 +592,26 @@ a.phoneNu span i {
 }
 /* services card section end */
 
+
+
+/* whatsapp fab */
+.fab-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.Call-fab-container{
+  position: fixed;
+  bottom: 94px;
+  right: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
 .BrandFooter {
   display: table;
   width: 40%;
@@ -670,7 +690,7 @@ a.phoneNu span i {
 
 /* copyright section start  */
 .f-bottom {
-  background: #151d45;
+  background: var(--primary);
   padding: 20px 0;
   color: #ffffff;
 }
@@ -707,8 +727,10 @@ a.phoneNu span i {
   transform: scale(-1) rotate(180deg);
 }
 
-
-
+.duolingoCard{
+  padding-bottom: 62px;
+}
+  
 .ourService .ImageCol {
   animation-name: float_up_down;
   animation-duration: 5s;
@@ -1155,9 +1177,7 @@ p.fifthH {
   border-radius: 8px;
   overflow: hidden;
 }
-.Topics2 {
-  background-color: #fdcbdf48;
-}
+
 
 /* What is an SOP? section end */
 
@@ -1208,6 +1228,32 @@ p.fifthH {
 }
 .maps iframe {
   aspect-ratio: 1;
+}
+
+.sidePannelSocial{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 8px;
+  margin: 24px 0;
+  padding-left: 32px;
+}
+
+.sidePannelSocial a{
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  font-size: 20px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+.sidePannelSocial a:hover{
+  background-color: var(--darkGreen);
 }
 
 /* contact Info Section end */

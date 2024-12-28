@@ -5,7 +5,7 @@
   --darkGreen: #10221b;
   --LightBgGrey: #f3f7fa;
   --primary: #0b4546;
-  --secondary: #0074E1;
+  --secondary: #d90f2f;
   --BgCream: #fcf9f6;
   --BGrey: #e1e3e5;
 }
@@ -81,6 +81,9 @@
 }
 
   
+.duolingoCard{
+  padding-bottom: 0px;
+}
 
   .Banner{
     background: url('../image/WorldMap.png'), linear-gradient(var(--BgCream),var(--BgCream));
@@ -119,6 +122,10 @@
     width: 50%;
   }
 
+  
+.duolingoCard{
+  padding-bottom: 62px;
+}
 
 .countryCard .therdH{
   font-size: 20px;
@@ -171,7 +178,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   }
-
+  
+  .duolingoCard{
+    padding-bottom: 0px;
+  }
+  
   .f-bottom .row{
     justify-content: center;
     align-items: center;
@@ -203,10 +214,15 @@
     font-size: 26px;
   }
 
+  
+
  }
 
  @media screen and (max-width: 912px) {
  
+  .f-bottom.effect::after{
+    display: none;
+  }
 
  }
 
@@ -242,6 +258,10 @@ header .container-fluid {
   padding: 30px 30px;
 }
 
+
+.miniheader .fifthH{
+  font-size: 14px;
+}
 
 
 .BigSizebtn.btnBlue{
@@ -340,7 +360,7 @@ header .container-fluid {
   }
 
   .VisaBanner ul {
-    font-size: 18px;
+    font-size: 16px;
   }
 
 
