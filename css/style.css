@@ -623,6 +623,15 @@ a.phoneNu span i {
   font-weight: 600;
 }
 
+.footer-address a{
+  color: var(--primary);
+  transition: all 300ms ease;
+}
+
+.footer-address a:hover {
+  color: var(--secondary);
+}
+
 .Footer {
   color: var(--primary);
   padding-top: 90px;
