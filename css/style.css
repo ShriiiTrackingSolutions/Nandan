@@ -133,6 +133,18 @@ font-size: 34px;
   background-color: var(--primary);
 }
 
+.adressMini{
+  color: #ffffff;
+  transition: all 300ms ease;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.7em;
+}
+.adressMini i{
+  margin-right: 4px;
+  color: #ffffff;
+}
+
 a.phoneNu {
   color: #ffffff;
   transition: all 300ms ease;
@@ -143,6 +155,8 @@ a.phoneNu {
 a.phoneNu span {
   display: inline-block;
   height: 18px;
+  margin-top: -2px;
+  margin-right: 4px;
   vertical-align: middle;
   width: 18px;
   text-align: center;

@@ -415,7 +415,8 @@ header .container-fluid {
     
     .newFont{
       font-family: 'Cooper';
-      font-size: 28px;
+      font-size: 32px;
+      line-height: 0;
     }
   .secH {
     font-size: 26px;
