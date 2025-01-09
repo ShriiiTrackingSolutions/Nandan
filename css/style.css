@@ -1,102 +1,18 @@
-@font-face {
-  font-family: "Maven Pro";
-  src: url("../fonts/MavenPro-Medium.woff2") format("woff2"),
-    url("../fonts/MavenPro-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-  font-family: "Maven Pro";
-  src: url("../fonts/MavenPro-Bold.woff2") format("woff2"),
-    url("../fonts/MavenPro-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Maven Pro";
-  src: url("../fonts/MavenPro-Black.woff2") format("woff2"),
-    url("../fonts/MavenPro-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Maven Pro";
-  src: url("../fonts/MavenPro-Regular.woff2") format("woff2"),
-    url("../fonts/MavenPro-Regular.woff") format("woff");
+  font-family: 'Maragsa';
+  src: url('../fonts/Maragsa-Display.woff2') format('woff2'),
+      url('../fonts/Maragsa-Display.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Noto Sans";
-  src: url("../fonts/NotoSans-Bold.woff2") format("woff2"),
-    url("../fonts/NotoSans-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Noto Sans";
-  src: url("../fonts/NotoSans.woff2") format("woff2"),
-    url("../fonts/NotoSans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Noto Sans";
-  src: url("../fonts/NotoSans-Italic.woff2") format("woff2"),
-    url("../fonts/NotoSans-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Noto Sans";
-  src: url("../fonts/NotoSans-BoldItalic.woff2") format("woff2"),
-    url("../fonts/NotoSans-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cooper';
-  src: url('../fonts/CooperBlack.woff2') format('woff2'),
-      url('../fonts/CooperBlack.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-@font-face {
-  font-family: "Corinthia";
-  src: url("../fonts/Corinthia-Bold.woff2") format("woff2"),
-    url("../fonts/Corinthia-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Corinthia";
-  src: url("../fonts/Corinthia-Regular.woff2") format("woff2"),
-    url("../fonts/Corinthia-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+/* font-family: "Roboto Condensed", serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal; */
 
 :root {
   --Black: #101010;
@@ -114,11 +30,12 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Maven Pro", sans-serif;
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 16px;
   color: #2e2e2e;
   line-height: 1.7em;
-  font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -135,8 +52,9 @@ img {
 }
 .display-3 {
   color: var(--primary);
-  font-family: "Maven Pro";
+   font-family: 'Maragsa';
   font-weight: 600;
+  letter-spacing: 4px;
   font-size: 54px;
   text-align: center;
   margin-bottom: 28px;
@@ -144,7 +62,8 @@ img {
 
 .secH {
   color: var(--primary);
-  font-family: "Maven Pro";
+   font-family: 'Maragsa';
+   letter-spacing: 3px;
   font-style: normal;
   text-transform: capitalize;
   font-weight: 700;
@@ -155,7 +74,8 @@ img {
 }
 
 .therdH {
-  font-family: "Maven Pro";
+   font-family: 'Maragsa';
+   letter-spacing: 2px;
   text-transform: capitalize;
   font-size: 24px;
   color: var(--primary);
@@ -167,13 +87,15 @@ img {
 .fourthH {
   text-align: center;
   text-transform: capitalize;
-  font-family: "Maven Pro";
+   font-family: 'Maragsa';
+   letter-spacing: 2px;
   font-size: 18px;
   font-weight: bold;
   line-height: 28.8px;
 }
 .fifthH {
-  font-family: "Maven Pro";
+   font-family: 'Maragsa';
+   letter-spacing: 2px;
   text-transform: capitalize;
   font-size: 20px;
   line-height: 30px;
@@ -399,7 +321,7 @@ a.phoneNu span i {
   text-wrap: wrap;
   font-weight: 500;
   text-transform: capitalize;
-  line-height: 14px;
+  line-height: 16px;
   color: var(--Black);
 }
 .nav-link {
@@ -443,6 +365,7 @@ a.phoneNu span i {
 /* header css end */
 
 /* banner css start */
+
 .Banner {
   background: url("../image/WorldMap.png"),
     linear-gradient(var(--BgCream), var(--BgCream));
@@ -484,6 +407,19 @@ a.phoneNu span i {
 }
 .counter-Pare {
   max-width: 750px;
+}
+
+.Banner.HomePage0 .btnCommon{
+  background-color: #2a6999;
+  border-color: #2a6999;
+}
+.Banner.HomePage0 .btnCommon:hover{
+  background-color: #2a699900;
+  border-color: var(--primary);
+}
+
+.f-bottom::after,.miniheader::after{
+  display: none !important;
 }
 
 
@@ -718,23 +654,24 @@ a.phoneNu span i {
   font-size: 30px;
   color: #d90f2f;
   display: inline-block;
-  transition: all 600ms ease;
-  -moz-transition: all 600ms ease;
-  -webkit-transition: all 600ms ease;
-  -ms-transition: all 600ms ease;
-  -o-transition: all 600ms ease;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .ourService  .innerBox {
   margin-bottom: 30px;
   text-align: center;
 }
 .ourService .innerBox:hover .icon-box {
-  -webkit-transform: scale(-1) rotate(180deg);
+  /* -webkit-transform: scale(-1) rotate(180deg);
   -moz-transform: scale(-1) rotate(180deg);
   -ms-transform: scale(-1) rotate(180deg);
-  -o-transform: scale(-1) rotate(180deg);
-  transform: scale(-1) rotate(180deg);
+  -o-transform: scale(-1) rotate(180deg); */
+  transform: scale(1.4) rotateZ(360deg); 
 }
+
 
 .duolingoCard{
   padding-bottom: 62px;
@@ -938,39 +875,13 @@ a.phoneNu span i {
   color: var(--Black);
   transition: all 0.3s ease-in-out;
 }
-.LinkStyleNew::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  height: 0%;
-  width: 100%;
-  background-color: var(--primary);
-  z-index: -1;
-  transition: all 0.3s ease-in-out;
-}
-.LinkStyleNew::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 0%;
-  width: 100%;
-  background-color: #d90f31;
-  z-index: -2;
-  transition: all 0.3s ease-in-out;
-}
+
 .LinkStyleNew:hover {
-  color: #ffffff;
+  color: var(--secondary);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
-.LinkStyleNew:hover::before {
-  transition-delay: 0.2s;
-  height: 100%;
-}
-.LinkStyleNew:hover::after {
-  height: 100%;
-}
+
 .countryVisaLinksBox ul {
   list-style: none;
   padding: 0;
