@@ -9,10 +9,6 @@
   font-display: swap;
 }
 
-/* font-family: "Roboto Condensed", serif;
-font-optical-sizing: auto;
-font-weight: <weight>;
-font-style: normal; */
 
 :root {
   --Black: #101010;
@@ -20,8 +16,8 @@ font-style: normal; */
   --textLightGrey: #505050;
   --darkGreen: #10221b;
   --LightBgGrey: #f3f7fa;
-  --primary: #0b4546;
-  --secondary: #d90f2f;
+  --primary: #14213d;
+  --secondary: #ae8625;
   --BgCream: #fcf9f6;
   --BGrey: #e1e3e5;
 }
@@ -410,8 +406,8 @@ a.phoneNu span i {
 }
 
 .Banner.HomePage0 .btnCommon{
-  background-color: #2a6999;
-  border-color: #2a6999;
+  background-color: #14213d;
+  border-color: #14213d;
 }
 .Banner.HomePage0 .btnCommon:hover{
   background-color: #2a699900;
@@ -448,8 +444,8 @@ a.phoneNu span i {
 }
 .btnRed:hover {
   background-color: transparent;
-  border: 1px solid #d90f2f;
-  color: #d90f2f !important;
+  border: 1px solid var(--secondary);
+  color: var(--secondary) !important;
 }
 
 .btnCommon {
@@ -528,6 +524,63 @@ a.phoneNu span i {
 }
 /* services card section end */
 
+
+/* form section start */
+
+.formWrap{
+  padding: 0 12px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.formWrap textarea{
+  resize: none;
+}
+.formWrap label{
+  font-weight: 600;
+  color: var(--primary);
+}
+.formWrap .form-control{
+  min-height: 50px;
+  border-width: 2px;
+  border-color: var(--secondary);
+}
+
+#desktopBtn{
+  display: table;
+  margin: auto;
+  margin-top: 12px;
+}
+
+.FormSection .modal-header {
+  justify-content: center;
+  position: relative;
+}
+.FormSection .modal-header .btn-close {
+ margin: 0 !important;
+ position: absolute;
+ right: 14px;
+ top: 14px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.option {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.option img {
+  width: 50px;
+  height: 50px;
+}
+
+/* form section end */
 
 
 /* whatsapp fab */
@@ -645,6 +698,15 @@ a.phoneNu span i {
   row-gap: 8px;
 }
 
+.copyright b{
+  color: var(--secondary);
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 1px;  
+}
+.copyright b:hover{
+ color: #c4a04d;
+}
+
 /* our service section start */
 
 .ourService .icon-box {
@@ -652,25 +714,14 @@ a.phoneNu span i {
   display: block;
   margin-bottom: 20px;
   font-size: 30px;
-  color: #d90f2f;
+  color: var(--secondary);
   display: inline-block;
-  transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
 }
 .ourService  .innerBox {
   margin-bottom: 30px;
   text-align: center;
 }
-.ourService .innerBox:hover .icon-box {
-  /* -webkit-transform: scale(-1) rotate(180deg);
-  -moz-transform: scale(-1) rotate(180deg);
-  -ms-transform: scale(-1) rotate(180deg);
-  -o-transform: scale(-1) rotate(180deg); */
-  transform: scale(1.4) rotateZ(360deg); 
-}
+
 
 
 .duolingoCard{
@@ -878,8 +929,6 @@ a.phoneNu span i {
 
 .LinkStyleNew:hover {
   color: var(--secondary);
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
 }
 
 .countryVisaLinksBox ul {
@@ -961,7 +1010,7 @@ a.phoneNu span i {
 -------------------*/
 
 .VisaBanner.USA_VistorPage0 {
-  background: linear-gradient(to right, #10101060, #10101000) no-repeat center,
+  background: linear-gradient(to right, #101010b2 40%, #1010102c) no-repeat center,
     url("../image/USA_Banner.png") no-repeat center;
   background-size: cover, cover;
   background-position: right;
@@ -1173,7 +1222,7 @@ p.fifthH {
   transition: background-color 0.3s ease-in-out;
 }
 .sidePannelSocial a:hover{
-  background-color: var(--darkGreen);
+  background-color: var(--secondary);
 }
 
 /* contact Info Section end */
@@ -1183,14 +1232,14 @@ p.fifthH {
 -------------------*/
 
 .VisaBanner.USA_studentPage0 {
-  background: linear-gradient(to right, #10101060, #10101000) no-repeat center,
+  background: linear-gradient(to right, #101010bb 30%, #1010100c) no-repeat center,
     url("../image/SutentVisaUSA.png") no-repeat center;
   background-size: cover, cover;
   background-position: right;
 }
 
 .VisaBanner.UK_studentPage0{
-  background: linear-gradient(to right, #10101060, #10101000) no-repeat center,
+  background: linear-gradient(to right, #101010bb 30%, #10101000) no-repeat center,
   url("../image/UK_student.png") no-repeat center;
 background-size: cover, cover;
 }
