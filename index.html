@@ -20,6 +20,17 @@
   </head>
 
   <body>
+    <!-- loader -->
+
+<div id="page-loader">
+  <div class="loader"></div>
+</div>
+
+<!-- loader end -->
+
+
+
+
     <header>
       <div class="miniheader effect">
         <div class="container-fluid">
@@ -1340,7 +1351,32 @@
   });
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Add 'loading' class to the body during the initial page load
+    document.body.classList.add("loading");
 
+    window.addEventListener("load", function () {
+
+    setTimeout(function(){
+      
+  
+      // Remove loader once the page is fully loaded
+      const loader = document.getElementById("page-loader");
+      if (loader) {
+        loader.style.opacity = "0";
+        setTimeout(() => {
+          loader.style.display = "none";
+          document.body.classList.remove("loading");
+        }, 500); // Fade out effect duration
+      }
+
+    },3000);
+
+    });
+
+  });
+</script>
 
   </body>
 </html>
