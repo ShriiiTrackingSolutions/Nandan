@@ -784,7 +784,17 @@ a.phoneNu span i {
 
 
 .duolingoCard{
-  padding-bottom: 62px;
+  padding-bottom: 26px;
+}
+.duolingoCard .therdH{
+  width: 188px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.realExam .therdH{
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
   
 .ourService .ImageCol {

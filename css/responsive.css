@@ -115,6 +115,16 @@
 .preferredLocation{
   background: none;
 }
+.duolingoCard .therdH{
+  width: 227px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.realExam .therdH{
+  width: 232px;
+  margin-left: auto;
+  margin-right: auto;
+}
  }
 
  @media (max-width: 1086.98px) {
