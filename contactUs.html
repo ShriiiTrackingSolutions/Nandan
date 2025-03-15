@@ -471,10 +471,10 @@
 
     const name = document.getElementById("ValidateName").value;
     const qualification = document.getElementById("ValidateQualification").value;
-    const courseDetail = document.getElementById("courseDetails").value;
+    const course = document.getElementById("courseDetails").value;
     const country = document.getElementById("ValidateCountry").value;
     const phone = document.getElementById("ValidatePhoneNo").value;
-    const email = document.getElementById("ValidateEmail").value;
+    const email_address = document.getElementById("ValidateEmail").value;
     const message = document.getElementById("ValidateMessage").value;
     const alertBox = document.getElementById("alertBox"); // Bootstrap alert div
 
@@ -482,48 +482,48 @@
       const response = await fetch("https://nandanback-production.up.railway.app/api/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, qualification, courseDetail, country, phone, email, message }),
+        body: JSON.stringify({ name, qualification, course, country, phone, email_address, message }),
       });
 
       const result = await response.json();
 
       if (response.ok) {
         alertBox.innerHTML = `
-          <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <div class="successIco">
-              <span class="iconify mb-1" data-icon="qlementine-icons:success-16"></span>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <div class="successIco">
+            <span class="iconify mb-1" data-icon="qlementine-icons:success-16"></span>
+          </div>
+          <h3 class="therdH">Submission is Successful</h3>
+          <div class="sucMessage">
+            <div class="emIcon">
+              <span class="iconify mb-1" data-icon="line-md:email-multiple-twotone"></span>
             </div>
-            <h3 class="therdH">Submission is Successful</h3>
-            <div class="sucMessage">
-              <div class="emIcon">
-                <span class="iconify mb-1" data-icon="line-md:email-multiple-twotone"></span>
-              </div>
-              <div class="sucText">We have sent you a submission message to your Email.</div>
-            </div>
-            <a class="btnMedium mt-4" target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
-              <span>Open Email</span>
-            </a>
-            <br>
-            <div class="dulText mt-3">
-              <span>Don't see our email? Check your spam folder</span>
-            </div>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>`;
+            <div class="sucText">We have sent you a submission message to your Email.</div>
+          </div>
+          <a class="btnMedium mt-4" target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+            <span>Open Email</span>
+          </a>
+          <br>
+          <div class="dulText mt-3">
+            <span>Don't see our email? Check your spam folder</span>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>`;
 
         document.getElementById("contactForm").reset(); // Reset form fields
       } else {
         alertBox.innerHTML = `
-          <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <strong>Error!</strong> ${result.error}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>`;
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>Error!</strong> ${result.error}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>`;
       }
     } catch (error) {
       alertBox.innerHTML = `
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-          <strong>Error!</strong> Something went wrong.
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>`;
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Error!</strong> Something went wrong.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>`;
     }
   });
 </script>
