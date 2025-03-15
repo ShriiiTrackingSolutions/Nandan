@@ -557,7 +557,7 @@
 
           <div class="col-xl-6 col-lg-4 col-md-12 ImageCol">
             <div class="image-box">
-              <img src="image/3.png" alt="" style="margin-top: -30px" />
+              <img loading="lazy" src="image/3.png" alt="" style="margin-top: -30px" />
             </div>
           </div>
         </div>
@@ -939,10 +939,10 @@
                   <div class="modal-body text-center">
                     <div class="options">
                       <button id="whatsappStandard" class="btn option">
-                        <img src="image/whatsapp-icon.png" alt="WhatsApp" />
+                        <img loading="lazy" src="image/whatsapp-icon.png" alt="WhatsApp" />
                       </button>
                       <button id="whatsappBusiness" class="btn option">
-                        <img
+                        <img loading="lazy"
                           src="image/whatsapp-business-icon.png"
                           alt="WhatsApp Business"
                         />
@@ -1371,16 +1371,13 @@
   });
 </script>
 
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     // Add 'loading' class to the body during the initial page load
     document.body.classList.add("loading");
 
     window.addEventListener("load", function () {
-
-    setTimeout(function(){
-      
-  
       // Remove loader once the page is fully loaded
       const loader = document.getElementById("page-loader");
       if (loader) {
@@ -1390,9 +1387,6 @@
           document.body.classList.remove("loading");
         }, 500); // Fade out effect duration
       }
-
-    },3000);
-
     });
 
   });
