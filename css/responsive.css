@@ -379,7 +379,10 @@ header .container-fluid {
   .VisaBanner ul {
     font-size: 16px;
   }
-
+  #alertBox .alert {
+    width: 100%;
+    max-width: 400px;
+  }
 
  }
 
